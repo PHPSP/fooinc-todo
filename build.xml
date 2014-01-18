@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="foobar-inc" basedir="." default="version">
+    <fileset dir="app/library" id="lib">
+        <include name="**/*.php"/>
+    </fileset>
+    <target name="version">
+        <echo msg="VERSION 0.0.1"/>
+    </target>
+    <target name="clean">
+        <delete dir="reports"/>
+        <mkdir dir="reports"/>
+    </target>
+    <target name="build" depends="clean,lint,style,cpd,md,unit"/>
+    <target name="lint" description="Erros de sintaxe">
+        <phplint>
+            <fileset refid="lib"/>
+        </phplint>
+    </target>
+    <target name="style" description="checagem de estilo">
+        <phpcodesniffer standard="PSR2" skipversioncheck="true">
+            <fileset refid="lib"/>
+            <formatter type="checkstyle" outfile="reports/checkstyle.xml"/>
+        </phpcodesniffer>
+    </target>
+    <target name="cpd">
+        <phpcpd >
+            <fileset refid="lib"/>
+            <formatter outfile="reports/cpd.xml" type="pmd"/>
+        </phpcpd>
+    </target>
+    <target name="md">
+        <phpmd>
+            <fileset refid="lib"/>
+            <formatter outfile="reports/md.xml" type="xml"/>
+        </phpmd>
+    </target>
+    <target name="unit">
+        <exec command="phpunit"/>
+    </target>
+</project>

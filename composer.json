@@ -1,0 +1,19 @@
+{
+    "name": "phpsp/foobar-inc",
+    "require": {
+        "respect/rest": "*",
+        "drakojn/io": "0.0.2.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "phpsp",
+            "email": "contato@phpsp.org.br"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Foobar\\":["app/library/","tests/"]
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1390066091">
+  <project timestamp="1390066091">
+    <package name="Foobar\Context">
+      <file name="/home/duodraco/Dropbox/Projects/fooinc-todo/app/library/Foobar/Context/Index.php">
+        <class name="Index" namespace="Foobar\Context">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="6" type="method" name="get" crap="1" count="1"/>
+        <line num="8" type="stmt" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <metrics loc="10" ncloc="10" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="/home/duodraco/Dropbox/Projects/fooinc-todo/tests/Foobar/Context/IndexTest.php">
+        <class name="IndexTest" namespace="Foobar\Context">
+          <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+        </class>
+        <line num="0" type="stmt" count="1"/>
+        <line num="8" type="method" name="setUp" crap="1" count="1"/>
+        <line num="10" type="stmt" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="13" type="method" name="tearDown" crap="1" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="18" type="method" name="testGet" crap="1" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="471" type="stmt" count="1"/>
+        <metrics loc="24" ncloc="24" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <metrics files="2" loc="34" ncloc="34" classes="2" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="14" coveredelements="14"/>
+  </project>
+</coverage>

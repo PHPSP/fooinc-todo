@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Io Test Suite" tests="1" assertions="1" failures="0" errors="0" time="0.009163">
+    <testsuite name="Foobar\Context\IndexTest" file="/home/duodraco/Dropbox/Projects/fooinc-todo/tests/Foobar/Context/IndexTest.php" namespace="Foobar\Context" fullPackage="Foobar.Context" tests="1" assertions="1" failures="0" errors="0" time="0.009163">
+      <testcase name="testGet" class="Foobar\Context\IndexTest" file="/home/duodraco/Dropbox/Projects/fooinc-todo/tests/Foobar/Context/IndexTest.php" line="18" assertions="1" time="0.009163"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
