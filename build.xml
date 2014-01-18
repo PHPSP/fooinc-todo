@@ -37,4 +37,14 @@
     <target name="unit">
         <exec command="phpunit"/>
     </target>
+    <target name="pdependyloc">
+        <pdepend>
+            <fileset refid="lib"/>
+            <logger type="phpunit-xml" outfile="reports/metrics.xml"/>
+            <logger type="jdepend-xml" outfile="reports/jdepend.xml"/>
+            <logger type="jdepend-chart" outfile="reports/chart.svg"/>
+            <logger type="overview-pyramid" outfile="reports/pyramid.svg"/>
+            <analyzer type="coderank-mode" value="method"/>
+        </pdepend>
+    </target>
 </project>
